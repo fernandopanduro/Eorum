@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
