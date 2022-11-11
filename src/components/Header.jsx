@@ -7,6 +7,7 @@ export function Header() {
             <div className={`container ${styles.headerContainer}`}>                
                 <h2>Eorum</h2>
                 <ul className={styles.list}>
+                    <li>New 🔥</li>
                     <li>T-Shirts</li>
                     <li>Sweatshirts</li>
                     <li>Jackets</li>
