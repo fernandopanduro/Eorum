@@ -1,4 +1,6 @@
 import styles from "../css/Header.module.css";
+import { CgShoppingCart } from 'react-icons/cg';
+import { HiOutlineUser } from "react-icons/hi";
 
 
 export function Header() {
@@ -15,8 +17,8 @@ export function Header() {
                 </ul>
                 <ul className={styles.list}>
                     <li>MXN</li>
-                    <li>Cuenta</li>
-                    <li>Carrito</li>
+                    <li> <HiOutlineUser /> </li>
+                    <li> <CgShoppingCart /> </li>
                 </ul>
             </div>
         </header>
