@@ -4,11 +4,35 @@
     cursor: pointer;
 }
 
-.cardImg {
+.cardImgContent {
     width: 100%;
     height: 18rem;
-    background-color: #777;
     position: relative;
+}
+
+.cardImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    transition: all .2s;
+}
+
+.card:hover .cardImg1 {
+    opacity: 0;
+}
+
+.card:hover .cardImgHover {
+    opacity: 1;
+}
+
+.cardImgHover {
+    opacity: 0;
+    z-index: -1;
 }
 
 .cardSave {
@@ -17,6 +41,7 @@
     color: #EB565F;
     background-color: #FCEEEE;
     border-bottom-right-radius: .5rem;
+    z-index: 10;
 }
 
 .cardPlus { 

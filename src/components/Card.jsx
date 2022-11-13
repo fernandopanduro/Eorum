@@ -1,10 +1,14 @@
 import styles from '../css/Card.module.css';
 import { AiOutlinePlus, AiFillStar } from "react-icons/ai";
+import img from '../pintures/dragon.webp'
+import img2 from '../pintures/phenix.jpg'
 
 export function Card() {
     return (
         <div className={styles.card}>
-            <div className={styles.cardImg}>
+            <div className={styles.cardImgContent}>
+                <img src={img} alt="" className={`${styles.cardImg} ${styles.cardImg1}`}/>
+                <img src={img2} alt="" className={`${styles.cardImg} ${styles.cardImgHover}`}/>
                 <div className={styles.cardSave}>200 USD</div>
                 <div className={styles.cardPlus}> <AiOutlinePlus size={23} /> </div>
             </div>
