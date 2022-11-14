@@ -1,13 +1,13 @@
 .card {
-    width: 18rem;
     height: 27rem;
     cursor: pointer;
 }
 
 .cardImgContent {
+    position: relative;
     width: 100%;
     height: 18rem;
-    position: relative;
+    overflow: hidden;
 }
 
 .cardImg {
@@ -16,26 +16,34 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
     z-index: -1;
-    transition: all .2s;
+    transition: all .3s;
+}
+
+.cardImg1 {
+    opacity: 0;
 }
 
 .card:hover .cardImg1 {
-    opacity: 0;
-}
-
-.card:hover .cardImgHover {
-    opacity: 1;
+    opacity: 1; 
 }
 
 .cardImgHover {
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
 }
 
+.card:hover .cardImgHover {
+    opacity: 0;
+}
+
+
 .cardSave {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: max-content;
     padding: .7rem;
     color: #EB565F;
@@ -52,6 +60,20 @@
     bottom: 0;
     right: 0;
     border-top-left-radius: .5rem;
+}
+
+.cardHeart {
+    transition: .3s;
+}
+
+.cardHeart:hover {
+    color: red;
+}
+
+
+.cardHeartSelect {
+    display: none;
+    color: red;
 }
 
 .cardContent {

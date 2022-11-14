@@ -8,8 +8,8 @@ const options = {
 	}
 };
 
-export async function get() {
-    return await fetch(API + '1005004176988795', options)
+export async function get(Id) {
+    return await fetch(API + Id, options)
 	.then(response => response.json())
 }
 
