@@ -24,22 +24,19 @@ export function Footer() {
                 <div className={styles.footerList}>
                     <p className={styles.footerSubmenu}>ABOUT</p>
                     <ul className={styles.footerList}>
-                        <li><Link to=''>About</Link> </li>
-                        <li><Link to=''>Blog</Link> </li>
-                        <li><Link to=''>Privacy</Link> </li>
-                        <li><Link to=''>Contact</Link> </li>
-                        <li><Link to=''>Shipping</Link> </li>
+                        <li><Link to='/about'>About</Link> </li>
+                        <li><Link to='/blog'>Blog</Link> </li>
+                        <li><Link to='/privacy'>Privacy</Link> </li>
+                        <li><Link to='contact'>Contact</Link> </li>
                     </ul>
                 </div>
 
                 <div className={styles.footerList}>
                     <p className={styles.footerSubmenu}>MENU</p>
                     <ul className={styles.footerList}>
-                        <li><Link to=''>New 🔥</Link></li>
-                        <li><Link to=''>T-Shirts</Link></li>
-                        <li><Link to=''>Sweatshirts</Link></li>
-                        <li><Link to=''>Jackets</Link></li>
-                        <li><Link to=''>Hoodies</Link></li>
+                        <li><Link to='/new'>New 🔥</Link></li>
+                        <li><Link to='/sweatshirts'>Sweatshirts</Link></li>
+                        <li><Link to='/jackets'>Jackets</Link></li>
                     </ul>
                 </div>
 

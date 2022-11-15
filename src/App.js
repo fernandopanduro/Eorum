@@ -3,6 +3,9 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { LandingPage } from './Pages/LandingPage';
 import styles from './css/App.module.css';
+import { GridCards } from "./components/GridCards";
+import { About } from './Pages/About'
+import { Blog } from './Pages/Blogs/Blog'
 
 function App() {
   return (
@@ -14,6 +17,13 @@ function App() {
         
         <Routes>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/new' element={<GridCards title='New'/>} />
+          <Route path='/jackets' element={<GridCards title='Jackets'/>} />
+          <Route path='/sweatshirts' element={<GridCards title='Sweatshirts'/>} />
+          <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
+          {/* <Route path='/products/:productId' element={<ProductDetails />}></Route> */}
+          <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
 
       </main>

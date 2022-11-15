@@ -6,8 +6,9 @@ import styles from '../css/LandingPage.module.css';
 export function LandingPage() {
     return (
         <div className="container">
-            <Banner />
-            <GridCards />
+            <GridCards title='New 🔥'/>
+            <GridCards title='Jackets'/>
+            <GridCards title='Sweatshirts'/>
         </div>
     );
 }

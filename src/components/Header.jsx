@@ -1,24 +1,28 @@
 import styles from "../css/Header.module.css";
 import { CgShoppingCart } from 'react-icons/cg';
 import { HiOutlineUser } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 
 export function Header() {
     return (
         <header className={styles.header}>
             <div className={`container ${styles.headerContainer}`}>                
-                <h2>Eorum</h2>
+                <h2><Link to='/'>EORUM</Link></h2>
                 <ul className={styles.list}>
-                    <li>New 🔥</li>
-                    <li>T-Shirts</li>
-                    <li>Sweatshirts</li>
-                    <li>Jackets</li>
-                    <li>Hoodies</li>
+                    <li><Link to='/new'>New 🔥</Link></li>
+                    <li><Link to='/sweatshirts'>Sweatshirts</Link></li>
+                    <li><Link to='/jackets'>Jackets</Link></li>
                 </ul>
                 <ul className={styles.list}>
-                    <li>MXN</li>
-                    <li> <HiOutlineUser /> </li>
-                    <li> <CgShoppingCart /> </li>
+                    <li>
+                        <select name="Concurry" id="Concurry">
+                            <option value="USD">USD</option>
+                            <option value="MXN">MXN</option>
+                        </select>
+                    </li>
+                    <li> <Link to='/acount'><HiOutlineUser size={25}/></Link> </li>
+                    <li> <Link to='/shoppingCart'><CgShoppingCart size={25} /></Link> </li>
                 </ul>
             </div>
         </header>
