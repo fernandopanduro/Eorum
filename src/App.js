@@ -6,6 +6,7 @@ import styles from './css/App.module.css';
 import { GridCards } from "./components/GridCards";
 import { About } from './Pages/About'
 import { Blog } from './Pages/Blogs/Blog'
+import { Contact } from "./Pages/Contact";
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
           <Route path='/sweatshirts' element={<GridCards title='Sweatshirts'/>} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
-
+    
       </main>
       <Footer />
 
