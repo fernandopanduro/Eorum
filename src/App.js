@@ -22,7 +22,6 @@ function App() {
           <Route path='/sweatshirts' element={<GridCards title='Sweatshirts'/>} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
-          {/* <Route path='/products/:productId' element={<ProductDetails />}></Route> */}
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
 
