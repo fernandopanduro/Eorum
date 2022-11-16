@@ -1,0 +1,47 @@
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .formFieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .containerLabel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formLabel {
+        display: block;
+    }
+
+    .formInput {
+        outline: none;
+        border-bottom: 1px solid black;
+    }
+
+    .formButton {
+        width: 10rem;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        border: 1px solid white;
+        transition: .3s;
+    }
+
+    .formButton:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
