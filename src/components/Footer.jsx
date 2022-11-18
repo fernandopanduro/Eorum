@@ -13,7 +13,7 @@ export function Footer() {
         <footer className={styles.footer}>
             <div className={`container ${styles.footerContainer}`}>
                 <div className={styles.footerList}>
-                    <h2 className={styles.footerSubmenu}>EORUM</h2>
+                    <Link to='/'><h2 className={styles.footerSubmenu}>EORUM</h2></Link> 
                     <ul className={styles.footerIcons}>
                         <li><a href='https://google.com' target='blank'><AiFillFacebook size={25} /></a></li>
                         <li><a href='https://google.com' target='blank'><AiFillInstagram size={25} /></a></li> 

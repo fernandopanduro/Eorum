@@ -8,6 +8,8 @@ import { About } from './Pages/About'
 import { Blog } from './Pages/Blogs/Blog'
 import { Contact } from "./Pages/Contact";
 import { Privacy } from "./Pages/Privacy";
+import { ShoppingCart } from "./Pages/ShoppingCart";
+import { ProductDetails } from "./Pages/ProductDetails";
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
         
         <Routes>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/shoppingCart' element={<ShoppingCart />} />
           <Route path='/new' element={<GridCards title='New'/>} />
           <Route path='/jackets' element={<GridCards title='Jackets'/>} />
+          <Route path='/products/:productId' element={<ProductDetails />} />
           <Route path='/sweatshirts' element={<GridCards title='Sweatshirts'/>} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />

@@ -13,15 +13,10 @@ export function GridCards({title}) {
                 <Link>View All</Link>
             </div>
             <ul className={styles.GridCards}>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-                <Card id={4001269647500} title={Products.Jackets[0].Title} salePrice={Products.Jackets[0].SalePrice} originalPrice={Products.Jackets[0].OriginalPrice} save={Products.Jackets[0].Save} currency={Products.Jackets[0].Currency} img1={Products.Jackets[0].Img1} img2={Products.Jackets[0].Img2}/>
-            </ul>
+                {
+                    Products.jackets.map((jacket) => <Card key={jacket.Id} jacket={jacket} id={jacket.Id} title={jacket.Title} salePrice={jacket.SalePrice} originalPrice={jacket.OriginalPrice} save={jacket.Save} currency={jacket.Currency} img1={jacket.Img1} img2={jacket.Img2} />)
+                }
+                </ul>
         </section>
 
 
