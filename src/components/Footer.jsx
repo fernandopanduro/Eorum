@@ -28,6 +28,7 @@ export function Footer() {
                         <li><Link to='/blog'>Blog</Link> </li>
                         <li><Link to='/privacy'>Privacy</Link> </li>
                         <li><Link to='/contact'>Contact</Link> </li>
+                        <li><Link to='/refund'>Refund</Link> </li>
                     </ul>
                 </div>
 

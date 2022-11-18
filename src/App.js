@@ -8,6 +8,7 @@ import { About } from './Pages/About'
 import { Blog } from './Pages/Blogs/Blog'
 import { Contact } from "./Pages/Contact";
 import { Privacy } from "./Pages/Privacy";
+import { Refund } from "./Pages/Refund";
 import { ShoppingCart } from "./Pages/ShoppingCart";
 import { ProductDetails } from "./Pages/ProductDetails";
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/privacy' element={<Privacy />} />
+          <Route path='/refund' element={<Refund  />} />
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
     
