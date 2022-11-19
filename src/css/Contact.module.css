@@ -1,13 +1,23 @@
     .title {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .subtitle {
         font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        font-weight: 600;
     }
     
     .form {
+        margin: 2rem 0;
+        max-width: 800px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        gap: 1rem;
+        gap: 1.7rem;
     }
 
     .formFieldset {
@@ -17,17 +27,19 @@
     }
 
     .containerLabel {
+        letter-spacing: 1.5px;
         display: flex;
         flex-direction: column;
     }
 
     .formLabel {
         display: block;
+        font-weight: 600;
     }
 
     .formInput {
         outline: none;
-        border-bottom: 1px solid black;
+        border: 1px solid black;
     }
 
     .formButton {
