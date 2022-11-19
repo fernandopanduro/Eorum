@@ -11,6 +11,7 @@ import { Privacy } from "./Pages/Privacy";
 import { Refund } from "./Pages/Refund";
 import { ShoppingCart } from "./Pages/ShoppingCart";
 import { ProductDetails } from "./Pages/ProductDetails";
+import { Shipping } from "./Pages/Shipping";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/refund' element={<Refund  />} />
+          <Route path='/shipping' element={<Shipping />} />
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
     

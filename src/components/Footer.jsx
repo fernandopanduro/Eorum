@@ -29,6 +29,7 @@ export function Footer() {
                         <li><Link to='/privacy'>Privacy</Link> </li>
                         <li><Link to='/contact'>Contact</Link> </li>
                         <li><Link to='/refund'>Refund</Link> </li>
+                        <li><Link to='/shipping'>Shipping</Link> </li>
                     </ul>
                 </div>
 
