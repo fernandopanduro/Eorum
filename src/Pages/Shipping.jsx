@@ -1,12 +1,21 @@
 import styles from '../css/Shipping.module.css'
 import { Ruta } from '../components/Ruta'
+import avif from '../pintures/shopping.avif'
+import jpg from '../pintures/shopping.jpg'
+import webp from '../pintures/shopping.webp'
 
 export function Shipping() {
     return (
         <section className='container'>
             <Ruta ruta='Shipping' />
             <h2 className={styles.title}>Shipping</h2>
+
             <div className={styles.shippingContainer}>
+                <pinture>
+                    <source srcSet={avif} type='image/avif' />
+                    <source srcSet={webp} type='image/webp' />
+                    <img src={jpg} alt="shipping process" />
+                </pinture>
                 <div className={styles.questionContainer}>
                     <h3 className={styles.question}>How are your products packaged for shipment?</h3>
                     <p className={styles.answer}>All products are shipped with bubble-wrapped envelop ensuring protection during shipment.</p>
