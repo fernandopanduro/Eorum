@@ -1,11 +1,10 @@
 import styles from '../css/Privacy.module.css';
+import { Ruta } from '../components/Ruta'
 
 export function Privacy() {
     return (
         <section className={`container`}>
-            <div className='ruta'>
-                Home / Privacy
-            </div>
+            <Ruta ruta='Privacy' />
             <h2 className={styles.privacyTitle}>Privacy</h2>
             <h3>Eorum Privacy Policy</h3>
             <div className={styles.privacyContainer}>

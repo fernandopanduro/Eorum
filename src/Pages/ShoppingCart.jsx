@@ -3,6 +3,8 @@ import { ProductItem } from '../components/ProductItem';
 import styles from '../css/ShoppingCart.module.css';
 import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
 import { Products } from '../utils/Products';
+import { Ruta } from '../components/Ruta'
+
 
 export function ShoppingCart() {
     
@@ -13,6 +15,7 @@ export function ShoppingCart() {
 
     return (
         <section>
+            <Ruta ruta='Shopping Cart' />
             <h2>Shopping Cart</h2>
             <h3>Products</h3>
             <article className={styles.box}>

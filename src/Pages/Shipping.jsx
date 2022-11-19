@@ -1,11 +1,10 @@
 import styles from '../css/Shipping.module.css'
+import { Ruta } from '../components/Ruta'
 
 export function Shipping() {
     return (
         <section className='container'>
-            <div className='ruta'>
-                Home / Shipping
-            </div>
+            <Ruta ruta='Shipping' />
             <h2 className={styles.title}>Shipping</h2>
             <div className={styles.shippingContainer}>
                 <div className={styles.questionContainer}>

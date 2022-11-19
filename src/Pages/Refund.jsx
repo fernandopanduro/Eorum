@@ -1,11 +1,10 @@
 import styles from '../css/Refund.module.css'
+import { Ruta } from '../components/Ruta'
 
 export function Refund() {
     return (
         <section className='container'>
-            <div className='ruta'>
-                Home / Refund
-            </div>
+            <Ruta ruta='Refund' />
             <h2 className={styles.refundTitle}>Refund</h2>
             <div className={styles.refundContainer}>
                 <div className={styles.paragrathContainer}>

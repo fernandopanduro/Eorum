@@ -1,9 +1,9 @@
+import { Ruta } from "../components/Ruta";
+
 export function About() {
     return (
         <section>
-            <div className='ruta'>
-                Home / About
-            </div>
+            <Ruta ruta='About' />
         </section>
     )
 }

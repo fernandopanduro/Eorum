@@ -1,11 +1,12 @@
 import styles from '../css/Contact.module.css';
+import { Ruta } from '../components/Ruta'
 
 export function Contact() {
     return (
         <section className={`container`}>
-            <div className='ruta'>
-                Home / Contact
-            </div>
+
+            <Ruta ruta='Contact'/>
+
             <h2 className={styles.title}>Contact</h2>
 
 
