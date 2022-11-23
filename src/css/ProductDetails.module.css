@@ -1,0 +1,264 @@
+hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.productDetails {
+    min-height: 1200px;
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4rem;
+}
+
+/* Imagen */
+
+.imgContainer {
+    grid-row: 1 / 5;
+}
+
+.imgMain {
+    position: sticky;
+    top: 3rem;
+}
+
+
+/* Details */
+
+.productDetailsDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-row: 1 / 5;
+}
+
+.otrainfo {
+    grid-column: 1 / 3;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review {
+    display: flex;
+}
+
+.review p {
+    margin-left: .3rem;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    gap: .7rem;
+}
+
+.salePrice {
+    color: red;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.detail h3  {
+    text-align: center;
+}
+
+.detail p {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+
+.list {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.sizeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.8rem;
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.colorItem {
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: .3rem;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.colorItem div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.quantitySelect {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantityBtn {
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    min-width: 2.5rem;
+}
+
+.quantityBtn_ {
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+}
+
+.btn {
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    background-color: black;
+    height: 2.7rem;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnBuy {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btnBuy:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Dropdown Descriptions */
+
+.dropdownDescription {
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.dropdownDescription input {
+    display: none;
+}
+
+.dropdownDescription label {
+    position: relative;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.dropdownText {
+    max-height: 0px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    position: relative;
+    top: -100%;
+    opacity: .5;
+    transition: .3s;
+}
+
+.dropdownDescription input:checked ~ .dropdownText {
+    max-height: 800px;
+    opacity: 1;
+    top: 0;
+}
+
+
+.dropdownTextReturns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dropdownTextSubtitle {
+    font-weight: 600;
+}
+
+.dropdownTextContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dropdownTextContacts form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.labelsContainer {
+    display: flex;
+    gap: .7rem;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 100%;
+}
+
+.labelContainer label {
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelContainer .input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    letter-spacing: 1.5px;
+    outline: none;
+}
+
+tr, td {
+    padding: .7rem;
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, .15);
+}
