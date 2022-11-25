@@ -17,11 +17,39 @@ hr {
 
 .imgContainer {
     grid-row: 1 / 5;
+    display: flex;
+    gap: 1rem;
 }
 
-.imgMain {
+.pictures {
+    width: 100px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.pictures img {
+    height: 100px;
+    opacity: 1;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pictures img:hover {
+    opacity: .7;
+}
+
+.picture {
+    position: relative;
+    width: 100%;
+    height: auto;
     position: sticky;
-    top: 3rem;
+    top: 0;
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -74,6 +102,7 @@ hr {
 .originalPrice {
     text-decoration: line-through;
     opacity: .6;
+    z-index: -1;
 }
 
 .details {

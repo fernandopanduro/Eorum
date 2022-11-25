@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useEffect, useReducer, useRef } from 'react';
 import { useParams } from "react-router-dom";
 import { get } from '../utils/httpClient';
 import { Products } from '../utils/Products';
@@ -7,6 +7,7 @@ import { AiFillStar, AiOutlineArrowsAlt } from "react-icons/ai";
 import { BiArrowToBottom } from "react-icons/bi";
 import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
 import styles from '../css/ProductDetails.module.css';
+import ReactImageMagnify from 'react-image-magnify';
 
 
 export function ProductDetails() {
@@ -18,7 +19,7 @@ export function ProductDetails() {
 
     const [productDetails, setProductDetails] = useState();
 
-    let title, id, salePrice, originalPrice, save, img1, img2, currency;
+    let title, id, salePrice, originalPrice, images, img1, img2, img3, img4, img5, img6, img7, img8,   currency;
 
     jackets.map((jacket) => {
         if (jacket.Id == productId) {
@@ -26,20 +27,76 @@ export function ProductDetails() {
             id = jacket.Id;
             salePrice = jacket.SalePrice;
             originalPrice = jacket.OriginalPrice;
-            save = jacket.Save;
-            img1 = jacket.Img1;
-            img2 = jacket.Img2;
+            [img1, img2, img3, img4, img5, img6, img7, img8] = jacket.Imgs;
+            images = jacket.Imgs;
             currency = jacket.Currency;
         }
-    })    
+    })   
+
+    // Change Image
+    const [img, setImg] = useState(img1)
+
+    const hoverHandler = (image , i) => {
+        setImg(image);
+        refs.current[i].classList.add('imgActive');
+        for (let j = 0; j < images.length; j++) {
+            if (i !== j) {
+                refs.current[j].classList.remove('imgActive')
+            }
+        }
+    }
+
+    const refs = useRef([]);
+    refs.current = [];
+    const addRefs = (el) => {
+        if (el && !refs.current.includes(el)) {
+            refs.current.push(el);
+        }
+    };
+
+    
 
     return (
         <section className={`${styles.productDetails} container`}>
 
             <div className={styles.imgContainer}>
-                <picture>
-                    <img className={styles.imgMain} src={img2} alt="" />
-                </picture>
+                
+
+                <div className={styles.pictures}>
+                    {
+                        images.map((image, i) => (
+                            <img 
+                            className={i == 0 ? 'imgActive' : ''}
+                            src={image} 
+                            alt={title} 
+                            onMouseOver={() => hoverHandler(image, i)} 
+                            key={i}
+                            ref={addRefs}/>
+                        ))
+                    }
+                </div>
+                
+                <div className={styles.picture}>
+                    {/* <img id='pic' className={styles.imgMain} src={img} alt="" /> */}
+                    <ReactImageMagnify {...{
+                        smallImage: {
+                            alt: {title},
+                            isFluidWidth: true,
+                            src: img,
+                        },
+                        largeImage: {
+                            src: img,
+                            width: 1200,
+                            height: 1800
+                        }, 
+                        enlargedImageContainerDimensions: {
+                            width: '150%',
+                            height: '150%'
+                        }
+                    }} />
+                </div>
+
+
             </div>
 
             <div className={styles.productDetailsDescription}>
@@ -105,42 +162,44 @@ export function ProductDetails() {
                             <label htmlFor="dropdown-head-size">Size Chart <BiArrowToBottom className={styles.arrow}/></label>
                             <div className={styles.dropdownText}>
                                 <table>
-                                    <tr>
-                                        <td>Size</td>
-                                        <td>Chest (inch)</td>
-                                        <td>Sleeves (inch)</td>
-                                        <td>Heigth (inch)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>M</td>
-                                        <td>37.8</td>
-                                        <td>24.8</td>
-                                        <td>160 - 169</td>
-                                    </tr>
-                                    <tr>
-                                        <td>L</td>
-                                        <td>40.9</td>
-                                        <td>25.2</td>
-                                        <td>170 - 175</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XL</td>
-                                        <td>44.0</td>
-                                        <td>25.8</td>
-                                        <td>176 - 180</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2XL</td>
-                                        <td>46.4</td>
-                                        <td>27.1</td>
-                                        <td>180 - 189</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3XL</td>
-                                        <td>49.5</td>
-                                        <td>27.6</td>
-                                        <td>190 - 200</td>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>Chest (inch)</td>
+                                            <td>Sleeves (inch)</td>
+                                            <td>Heigth (inch)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>37.8</td>
+                                            <td>24.8</td>
+                                            <td>160 - 169</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>40.9</td>
+                                            <td>25.2</td>
+                                            <td>170 - 175</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XL</td>
+                                            <td>44.0</td>
+                                            <td>25.8</td>
+                                            <td>176 - 180</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2XL</td>
+                                            <td>46.4</td>
+                                            <td>27.1</td>
+                                            <td>180 - 189</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3XL</td>
+                                            <td>49.5</td>
+                                            <td>27.6</td>
+                                            <td>190 - 200</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -210,6 +269,8 @@ export function ProductDetails() {
     const [imgMain, setImgMain] = useState([])
     const [img, setImg] = useState([])
 
+
+    
     useEffect( () => {
          get(id).then(response => {
             setIdProduct(response.product_id);
