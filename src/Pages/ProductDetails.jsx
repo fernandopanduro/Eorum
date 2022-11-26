@@ -14,13 +14,13 @@ export function ProductDetails() {
     const {productId} = useParams();
 
     const [state, dispatch] = useReducer(shoppingReducer, Products)    
-    const {jackets, cart} = state;
+    const {Jackets, cart} = state;
 
     const [productDetails, setProductDetails] = useState();
 
-    let title, id, salePrice, originalPrice, images, img1, img2, img3, img4, img5, img6, img7, img8,   currency;
+    let title, id, salePrice, originalPrice, images, img1, img2, img3, img4, img5, img6, img7, img8, currency;
 
-    jackets.map((jacket) => {
+    Jackets.map((jacket) => {
         if (jacket.Id == productId) {
             title = jacket.Title;
             id = jacket.Id;
@@ -76,7 +76,6 @@ export function ProductDetails() {
                 </div>
                 
                 <div className={styles.picture}>
-                    {/* <img id='pic' className={styles.imgMain} src={img} alt="" /> */}
                     <ReactImageMagnify {...{
                         smallImage: {
                             alt: {title},
