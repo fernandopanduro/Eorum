@@ -1,6 +1,5 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useReducer, useRef } from 'react';
 import { useParams } from "react-router-dom";
-import { get } from '../utils/httpClient';
 import { Products } from '../utils/Products';
 import { useState } from 'react';
 import { AiFillStar, AiOutlineArrowsAlt } from "react-icons/ai";

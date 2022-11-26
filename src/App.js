@@ -24,10 +24,10 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/shoppingCart' element={<ShoppingCart />} />
-          <Route path='/new' element={<GridCards title='New'/>} />
-          <Route path='/jackets' element={<GridCards title='Jackets'/>} />
+          <Route path='/new' element={<GridCards category='New' title='New'/>} />
+          <Route path='/jackets' element={<GridCards category='Jackets' title='Jackets'/>} />
+          <Route path='/sweatshirts' element={<GridCards category='Sweatshirts' title='Sweatshirts'/>} />
           <Route path='/products/:productId' element={<ProductDetails />} />
-          <Route path='/sweatshirts' element={<GridCards title='Sweatshirts'/>} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />

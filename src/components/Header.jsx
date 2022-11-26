@@ -11,8 +11,8 @@ export function Header() {
                 <h2><Link to='/'>EORUM</Link></h2>
                 <ul className={styles.list}>
                     <li><Link to='/new'>New 🔥</Link></li>
-                    <li><Link to='/sweatshirts'>Sweatshirts</Link></li>
                     <li><Link to='/jackets'>Jackets</Link></li>
+                    <li><Link to='/sweatshirts'>Sweatshirts</Link></li>
                 </ul>
                 <ul className={styles.list}>
                     <li>
