@@ -1,0 +1,47 @@
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    gap: 2rem;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.label {
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: .5rem 1rem;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.btnSubmit {
+    background-color: black;
+    color: white;
+    padding: .9rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
