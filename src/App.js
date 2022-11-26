@@ -12,6 +12,7 @@ import { Refund } from "./Pages/Refund";
 import { ShoppingCart } from "./Pages/ShoppingCart";
 import { ProductDetails } from "./Pages/ProductDetails";
 import { Shipping } from "./Pages/Shipping";
+import { CreateAcount } from "./Pages/CreateAcount";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/jackets' element={<GridCards category='Jackets' title='Jackets'/>} />
           <Route path='/sweatshirts' element={<GridCards category='Sweatshirts' title='Sweatshirts'/>} />
           <Route path='/products/:productId' element={<ProductDetails />} />
+          <Route path='/create-acount' element={<CreateAcount />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
