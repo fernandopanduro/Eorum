@@ -31,7 +31,7 @@ function App() {
 
           <Route path='/new' element={<GridCards category='New' title='New'/>} />
           <Route path='/jackets' element={<GridCards category='Jackets' title='Jackets'/>} />
-          <Route path='/sweatshirts' element={<GridCards category='Sweatshirts' title='Sweatshirts'/>} />
+          <Route path='/hoddies' element={<GridCards category='Sweatshirts' title='Sweatshirts'/>} />
           
           <Route path='/create-acount' element={<CreateAcount />} />
           <Route path='/login' element={<Login />} />

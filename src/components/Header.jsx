@@ -12,7 +12,7 @@ export function Header() {
                 <ul className={styles.list}>
                     <li><Link to='/new'>New 🔥</Link></li>
                     <li><Link to='/jackets'>Jackets</Link></li>
-                    <li><Link to='/sweatshirts'>Sweatshirts</Link></li>
+                    <li><Link to='/hoddies'>Sweatshirts</Link></li>
                 </ul>
                 <ul className={styles.list}>
                     <li>

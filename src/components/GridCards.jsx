@@ -14,7 +14,15 @@ export function GridCards({title, category}) {
         <section className={`${styles.gridCardsContainer} container`}>
             <div className={styles.gridCardTitleContainer}>
                 <h2 className={styles.gridCardTitle}>{title}</h2>
-                <Link>View All</Link>
+
+                {
+                    category == "New" ? 
+                    <Link to='/new'>View All</Link>
+                    : category == "jackets" ?
+                    <Link to='/jackets'>View All</Link>
+                    : <Link to='/hoddies'>View All</Link>
+                }
+
             </div>
             
             <ul className={styles.GridCards}>
