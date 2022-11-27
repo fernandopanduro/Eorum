@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .gridCardTitleContainer {
@@ -17,7 +17,7 @@
 
 .GridCards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-template-columns: repeat(auto-fill, minmax(13rem, auto));
     gap: 3rem;
     justify-content: space-between;
     align-items: center;
