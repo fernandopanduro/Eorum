@@ -15,6 +15,12 @@
     align-items: flex-start;
 }
 
+@media (max-width: 720px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+}
+
 .footerSubmenu {
     font-weight: 700;
 }
@@ -27,7 +33,16 @@
 .footerList {
     display: flex;
     flex-direction: column;
+    max-width: 350px;
     gap: .7rem;
+}
+
+@media (max-width: 720px) {
+    .footerList {
+       margin-bottom: .7rem;
+       max-width: 100%;
+
+    }
 }
 
 .footerLabel {
@@ -37,6 +52,8 @@
     color: #fdfdfd;
     border: 1px solid #fdfdfd;
     border-radius: 1px;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
 }
 
 .footerLabel div {
@@ -49,6 +66,7 @@
 .footerInput {
     width: 100%;
     background-color: transparent;
+    margin-left: .7rem;
     outline: none;
 }
 
@@ -67,6 +85,10 @@
 .payments {
     display: flex;
     gap: .7rem;
+}
+
+.payments li {
+    margin-right: .7rem;
 }
 
 .copyrights {
