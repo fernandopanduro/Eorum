@@ -11,8 +11,8 @@ export function GridCards({title, category}) {
 
     return (
 
-        <section className={`${styles.gridCardsContainer} container`}>
-            <div className={styles.gridCardTitleContainer}>
+        <section className={`container ${styles.gridCardsContainer}`}>
+            <div className={`${styles.gridCardTitleContainer}`}>
                 <h2 className={styles.gridCardTitle}>{title}</h2>
 
                 {
@@ -21,11 +21,11 @@ export function GridCards({title, category}) {
                     : category == "jackets" ?
                     <Link to='/jackets'>View All</Link>
                     : <Link to='/hoddies'>View All</Link>
-                }
+                }   
 
             </div>
             
-            <ul className={styles.GridCards}>
+            <ul className={`${styles.GridCards}`}>
                 {
                     category == "New" ? 
                     New.map((product) => <Card key={product.Id} jacket={product} id={product.Id} title={product.Title} salePrice={product.SalePrice} originalPrice={product.OriginalPrice} save={product.Save} currency={product.Currency} img1={product.Img1} img2={product.Img2} />)
@@ -33,7 +33,7 @@ export function GridCards({title, category}) {
                     Jackets.map((product) => <Card key={product.Id} jacket={product} id={product.Id} title={product.Title} salePrice={product.SalePrice} originalPrice={product.OriginalPrice} save={product.Save} currency={product.Currency} img1={product.Img1} img2={product.Img2} />)
                     : Hoddies.map((product) => <Card key={product.Id} jacket={product} id={product.Id} title={product.Title} salePrice={product.SalePrice} originalPrice={product.OriginalPrice} save={product.Save} currency={product.Currency} img1={product.Img1} img2={product.Img2} />)
                 }
-                </ul>
+            </ul>
         </section>
 
 

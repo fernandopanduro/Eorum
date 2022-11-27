@@ -23,14 +23,14 @@ export function Header() {
                     <li className={styles.listItem}><Link to='/hoddies'>Hoddies</Link></li>
                 </ul>
                 <ul className={styles.list}>
-                    <li>
+                    <li className={styles.listItem}>
                         <select name="Concurry" id="Concurry">
                             <option value="USD">USD</option>
                             <option value="MXN">MXN</option>
                         </select>
                     </li>
-                    <li> <Link to='/acount'><HiOutlineUser size={25}/></Link></li>
-                    <li> <Link to='/shoppingCart'><CgShoppingCart size={25} /></Link></li>
+                    <li className={styles.listItem}> <Link to='/acount'><HiOutlineUser size={25}/></Link></li>
+                    <li className={styles.listItem}> <Link to='/shoppingCart'><CgShoppingCart size={25} /></Link></li>
                 </ul>
 
                 <div className={`${styles.barsMenu}`} onClick={() => setIsOpen(!isOpen)}>
