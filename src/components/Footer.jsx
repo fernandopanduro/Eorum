@@ -16,7 +16,7 @@ export function Footer() {
                     <Link to='/'><h2 className={styles.footerSubmenu}>EORUM</h2></Link> 
                     <ul className={styles.footerIcons}>
                         <li><a href='https://google.com' target='blank'><AiFillFacebook size={25} /></a></li>
-                        <li><a href='https://google.com' target='blank'><AiFillInstagram size={25} /></a></li> 
+                        <li><a href='https://www.instagram.com/eorum.oficial/t' target='blank'><AiFillInstagram size={25} /></a></li> 
                     </ul>
                     <p>Support@eorum.com</p>
                 </div>
@@ -25,7 +25,6 @@ export function Footer() {
                     <p className={styles.footerSubmenu}>ABOUT</p>
                     <ul className={styles.footerList}>
                         <li><Link to='/about'>About</Link> </li>
-                        <li><Link to='/blog'>Blog</Link> </li>
                         <li><Link to='/privacy'>Privacy</Link> </li>
                         <li><Link to='/terms'>Terms</Link> </li>
                         <li><Link to='/contact'>Contact</Link> </li>

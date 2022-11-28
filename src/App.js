@@ -5,7 +5,6 @@ import { LandingPage } from './Pages/LandingPage';
 import styles from './css/App.module.css';
 import { GridCards } from "./components/GridCards";
 import { About } from './Pages/About'
-import { Blog } from './Pages/Blogs/Blog'
 import { Contact } from "./Pages/Contact";
 import { Privacy } from "./Pages/Privacy";
 import { Refund } from "./Pages/Refund";
@@ -38,7 +37,6 @@ function App() {
 
           <Route path='/about' element={<About />} />
           <Route path='/terms' element={<Terms />} />
-          <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/privacy' element={<Privacy />} />
           <Route path='/refund' element={<Refund  />} />

@@ -1,21 +1,22 @@
-.terms {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
 .title {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
+    margin-bottom: 3rem;
 }
 
-.termsContainer {
+.aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     max-width: 800px;
     width: 100%;
     letter-spacing: 1.5px;
+}
+
+.aboutContainer img {
+    margin-bottom: 2rem;
+}
+
+.paragrath {
+    margin-bottom: 2rem;
 }
