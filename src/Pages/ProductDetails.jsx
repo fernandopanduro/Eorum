@@ -2,8 +2,10 @@ import { useReducer, useRef } from 'react';
 import { useParams } from "react-router-dom";
 import { Products } from '../utils/Products';
 import { useState } from 'react';
-import { AiFillStar, AiOutlineArrowsAlt } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
+import { MdArrowForwardIos } from 'react-icons/md'
 import { BiArrowToBottom } from "react-icons/bi";
+import { Slide } from 'react-slideshow-image';
 import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
 import styles from '../css/ProductDetails.module.css';
 import ReactImageMagnify from 'react-image-magnify';
@@ -75,6 +77,7 @@ export function ProductDetails() {
                     }
                 </div>
                 
+
                 <div className={styles.picture}>
                     <ReactImageMagnify {...{
                         smallImage: {
@@ -157,7 +160,7 @@ export function ProductDetails() {
 
                         <div className={styles.dropdownDescription}>
                             <input type="checkbox" name="dropdown-head" id="dropdown-head-size" />
-                            <label htmlFor="dropdown-head-size">Size Chart <BiArrowToBottom className={styles.arrow}/></label>
+                            <label htmlFor="dropdown-head-size">Size Chart <MdArrowForwardIos className={styles.arrow}/></label>
                             <div className={styles.dropdownText}>
                                 <table>
                                     <tbody>
@@ -204,7 +207,7 @@ export function ProductDetails() {
 
                         <div className={styles.dropdownDescription}>
                             <input type="checkbox" name="dropdown-head" id="dropdown-head-returns" />
-                            <label htmlFor="dropdown-head-returns">Shipping & Returns <BiArrowToBottom className={styles.arrow}/></label>
+                            <label htmlFor="dropdown-head-returns">Shipping & Returns <MdArrowForwardIos className={styles.arrow}/></label>
                             <div className={`${styles.dropdownText} ${styles.dropdownTextReturns}`}>
                                 <h3 className={styles.dropdownTextSubtitle}>Processing Time</h3>
                                 <p>1 - 3 Business Days</p>
@@ -217,7 +220,7 @@ export function ProductDetails() {
 
                         <div className={styles.dropdownDescription}>
                             <input type="checkbox" name="dropdown-head" id="dropdown-head-contact" />
-                            <label htmlFor="dropdown-head-contact">Not Sure About Your Size?<BiArrowToBottom className={styles.arrow}/></label>
+                            <label htmlFor="dropdown-head-contact">Not Sure About Your Size?<MdArrowForwardIos className={styles.arrow}/></label>
                             <div className={`${styles.dropdownText} ${styles.dropdownTextContacts}`}>
                                 <p>Questions? Email: support@eorum.com</p>
                                 <form action="">
@@ -241,10 +244,6 @@ export function ProductDetails() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className={styles.otrainfo}>
-
             </div>
 
         </section>
