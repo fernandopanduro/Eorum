@@ -1,0 +1,27 @@
+import styles from '../css/CartItem.module.css'
+import { RiDeleteBinLine } from 'react-icons/ri'
+
+export function CartItem({data, delFromCart}) {
+
+    const {Title, Id, OriginalPrice, SalePrice, Img1, Quantity} = data;
+
+    return (
+        <div className={styles.cartItem}>
+            <div className={styles.img}>
+                <img src={Img1} alt={Title} />   
+            </div>
+            <div className={styles.cartItemContain}>
+                <div className={styles.description}>                    
+                    <h3 className={styles.title}>{Title}</h3>
+                    <p className={styles.salePrice}>${SalePrice}</p>
+                </div>
+                <div className={styles.btns}>
+                    <button onClick={() => delFromCart(Id)} className={styles.btn}>-</button>
+                    <button className={styles.btn}>1</button>
+                    <button className={styles.btn}>+</button>
+                    <button onClick={() => delFromCart(Id, true)} className={styles.btn}><RiDeleteBinLine className={styles.btnDel}/></button>
+                </div>
+            </div>  
+        </div>
+    )
+}

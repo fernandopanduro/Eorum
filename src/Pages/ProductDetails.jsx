@@ -1,36 +1,52 @@
-import { useReducer, useRef } from 'react';
+import { useEffect, useReducer, useRef } from 'react';
 import { useParams } from "react-router-dom";
 import { Products } from '../utils/Products';
 import { useState } from 'react';
 import { AiFillStar } from "react-icons/ai";
 import { MdArrowForwardIos } from 'react-icons/md'
-import { BiArrowToBottom } from "react-icons/bi";
-import { Slide } from 'react-slideshow-image';
-import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
+import { shoppingReducer } from '../Reducers/shoppingReducer';
 import styles from '../css/ProductDetails.module.css';
 import ReactImageMagnify from 'react-image-magnify';
+import { TYPES } from '../Actions/shoppingActions';
+
 
 
 export function ProductDetails() {
 
     const {productId} = useParams();
+    console.log(productId)
 
     const [state, dispatch] = useReducer(shoppingReducer, Products)    
-    const {Jackets, cart} = state;
+    const {Jackets, Hoddies, Cart} = state;
 
-    const [productDetails, setProductDetails] = useState();
 
     let title, id, salePrice, originalPrice, images, img1, img2, img3, img4, img5, img6, img7, img8, currency;
 
-    Jackets.map((jacket) => {
-        if (jacket.Id == productId) {
-            title = jacket.Title;
-            id = jacket.Id;
-            salePrice = jacket.SalePrice;
-            originalPrice = jacket.OriginalPrice;
-            [img1, img2, img3, img4, img5, img6, img7, img8] = jacket.Imgs;
-            images = jacket.Imgs;
-            currency = jacket.Currency;
+    const addToCard = (id) => {
+        dispatch({type: TYPES.ADD_TO_CART, payload: id})
+    };
+
+    Jackets.map((product) => {
+        if (product.Id == productId) {
+            title = product.Title;
+            id = product.Id;
+            salePrice = product.SalePrice;
+            originalPrice = product.OriginalPrice;
+            [img1, img2, img3, img4, img5, img6, img7, img8] = product.Imgs;
+            images = product.Imgs;
+            currency = product.Currency;
+        }
+    })   
+
+    Hoddies.map((product) => {
+        if (product.Id == productId) {
+            title = product.Title;
+            id = product.Id;
+            salePrice = product.SalePrice;
+            originalPrice = product.OriginalPrice;
+            [img1, img2, img3, img4, img5, img6, img7, img8] = product.Imgs;
+            images = product.Imgs;
+            currency = product.Currency;
         }
     })   
 
@@ -54,6 +70,13 @@ export function ProductDetails() {
             refs.current.push(el);
         }
     };
+
+    // quantityNumber
+
+    const [quantityNumber, setQuantityNumber] = useState(1)
+
+    
+
 
     
 
@@ -124,6 +147,8 @@ export function ProductDetails() {
                     <div className={`${styles.detail} ${styles.sizes}`}>
                         <p>Asian Size</p>
                         <ul className={`${styles.sizeBtns} ${styles.list}`}>
+                        
+
                             <li className={styles.sizeBtn}>M</li>
                             <li className={styles.sizeBtn}>L</li>
                             <li className={styles.sizeBtn}>XL</li>
@@ -141,13 +166,13 @@ export function ProductDetails() {
                         <p>Quantity</p>
                         <div className={styles.quantitySelect}>
                             <button className={`${styles.quantityBtn} ${styles.quantityBtn_}`}>-</button>
-                            <p>1</p>
+                            <p className={styles.quantityNumber}>{quantityNumber}</p>
                             <button className={styles.quantityBtn}>+</button>
                         </div>
 
                     </div>
                     <div className={`${styles.detail} ${styles.btns}`}>
-                        <input className={styles.btn} type="submit" value='Add To Cart'/>
+                        <button onClick={() => addToCard(productId)} className={styles.btn}>Add To Cart</button>
                         <input className={`${styles.btn} ${styles.btnBuy}`} type="submit" value='Buy It Now'/>
                     </div>
                     <div className={`${styles.detail}`}>

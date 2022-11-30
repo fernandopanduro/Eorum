@@ -9,6 +9,10 @@ export function GridCards({title, category}) {
     const Jackets = Products.Jackets;
     const Hoddies = Products.Hoddies;
 
+
+    
+
+
     return (
 
         <section className={`container ${styles.gridCardsContainer}`}>
