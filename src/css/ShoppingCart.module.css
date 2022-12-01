@@ -1,0 +1,41 @@
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.pricesContainer {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceContainer p:nth-child(1) {
+    opacity: .7;
+}
+
+.totalContainer {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    max-width: 350px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: .8rem;
+    letter-spacing: 1.5px;
+}

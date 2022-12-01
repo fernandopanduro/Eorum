@@ -39,7 +39,7 @@ export function Header() {
                             <option value="MXN">MXN</option>
                         </select>
                     </li>
-                    <li className={styles.listItem}> <Link to='/acount'><HiOutlineUser size={25}/></Link></li>
+                    <li className={styles.listItem}> <Link to='/login'><HiOutlineUser size={25}/></Link></li>
                     <li className={`${styles.listItem} ${styles.shoppingCart}`}> 
                         <div /* onClick={() => setProductLength(productLength + 1)} */ className={styles.shoppingCartBall}>{/* {productLength} */}</div> 
                         <Link to='/shoppingCart'><CgShoppingCart size={25} /></Link>

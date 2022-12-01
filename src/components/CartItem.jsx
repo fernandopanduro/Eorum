@@ -16,10 +16,12 @@ export function CartItem({data, delFromCart}) {
                     <p className={styles.salePrice}>${SalePrice}</p>
                 </div>
                 <div className={styles.btns}>
-                    <button onClick={() => delFromCart(Id)} className={styles.btn}>-</button>
-                    <button className={styles.btn}>1</button>
-                    <button className={styles.btn}>+</button>
-                    <button onClick={() => delFromCart(Id, true)} className={styles.btn}><RiDeleteBinLine className={styles.btnDel}/></button>
+                    <div className={styles.btnsQuantity}>                        
+                        <button onClick={() => delFromCart(Id)} className={styles.btn}>-</button>
+                        <button className={styles.btn}>1</button>
+                        <button className={styles.btn}>+</button>
+                    </div>
+                    <button onClick={() => delFromCart(Id, true)} className={`${styles.btn} ${styles.btnDel}`}><RiDeleteBinLine className={styles.btnDel}/></button>
                 </div>
             </div>  
         </div>
