@@ -15,6 +15,7 @@ import { CreateAcount } from "./Pages/CreateAcount";
 import { Login } from "./Pages/Login";
 import { Terms } from "./Pages/Terms";
 import { Checkout } from "./Pages/Checkout";
+import { Payment } from "./Pages/Payment";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path='/refund' element={<Refund  />} />
           <Route path='/shipping' element={<Shipping />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/payment' element={<Payment />} />
           
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
