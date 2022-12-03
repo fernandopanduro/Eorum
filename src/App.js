@@ -16,6 +16,7 @@ import { Login } from "./Pages/Login";
 import { Terms } from "./Pages/Terms";
 import { Checkout } from "./Pages/Checkout";
 import { Payment } from "./Pages/Payment";
+import { PaidOut } from "./Pages/PaidOut";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='/shipping' element={<Shipping />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/payment' element={<Payment />} />
+          <Route path='/paidOut' element={<PaidOut />} />
           
           <Route path='*' element={<Navigate replace to='/' />}></Route>
         </Routes>
