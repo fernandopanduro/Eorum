@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/fernandopanduro/Eorum/static/css/main.754309ca.css",
+    "main.js": "/fernandopanduro/Eorum/static/js/main.d939ae7b.js",
+    "static/media/japon.jpg": "/fernandopanduro/Eorum/static/media/japon.4edc13baf05ea8fd7c2f.jpg",
+    "static/media/laser-cheung.jpg": "/fernandopanduro/Eorum/static/media/laser-cheung.06a2171fdfdde97db8f8.jpg",
+    "static/media/shopping.jpg": "/fernandopanduro/Eorum/static/media/shopping.fc2159cce821731cbbaf.jpg",
+    "static/media/shopping.webp": "/fernandopanduro/Eorum/static/media/shopping.39649cff747044849de8.webp",
+    "static/media/shopping.avif": "/fernandopanduro/Eorum/static/media/shopping.8336acac901b3e9eb536.avif",
+    "index.html": "/fernandopanduro/Eorum/index.html",
+    "main.754309ca.css.map": "/fernandopanduro/Eorum/static/css/main.754309ca.css.map",
+    "main.d939ae7b.js.map": "/fernandopanduro/Eorum/static/js/main.d939ae7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.754309ca.css",
+    "static/js/main.d939ae7b.js"
+  ]
+}
