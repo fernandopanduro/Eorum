@@ -14,7 +14,7 @@ export function Privacy() {
                 </div>
 
                 <div className={styles.paragraths}>
-                    <p className={styles.paragrath}>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from koisea.com (the “Site”).</p>
+                    <p className={styles.paragrath}>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from eorum.com (the “Site”).</p>
                 </div>
 
                 <div className={styles.paragraths}>

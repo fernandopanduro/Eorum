@@ -41,7 +41,7 @@ export function Refund() {
                 </div>
                 <div className={styles.paragrathContainer}>
                     <p className={styles.paragrathTitle}>Exchanges (if applicable)</p>
-                    <p>If you need to exchange it for the same item for larger or smaller size, send us an email at support@koisea.com</p>
+                    <p>If you need to exchange it for the same item for larger or smaller size, send us an email at support@eorum.com</p>
                 </div>
                 <div className={styles.paragrathContainer}>
                     <p className={styles.paragrathTitle}>Gifts</p>
@@ -52,7 +52,7 @@ export function Refund() {
                 </div>
                 <div className={styles.paragrathContainer}>
                     <p className={styles.paragrathTitle}>Shipping</p>
-                    <p>To return your product, you should email us at support@koisea.com first.</p>
+                    <p>To return your product, you should email us at support@eorum.com first.</p>
                 </div>
                 <div className={styles.paragrathContainer}>
                     <p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund</p>
