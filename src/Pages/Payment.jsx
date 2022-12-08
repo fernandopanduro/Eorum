@@ -32,8 +32,8 @@ export function Payment() {
                         <label htmlFor="saveCard">Save card details</label>
                     </div>
                 </fieldset>
-                <button className='btn'><Link to='/paidOut'>Pay</Link></button>
             </form>
+                <button className='btn'><Link to='/paidOut'>Pay</Link></button>
         </section>
     )
 }

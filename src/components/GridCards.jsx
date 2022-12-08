@@ -17,7 +17,7 @@ export function GridCards({title, category}) {
 
         <section className={`container ${styles.gridCardsContainer}`}>
             <div className={`${styles.gridCardTitleContainer}`}>
-                <h2 className={styles.gridCardTitle}>{title}</h2>
+                <h2 className='title'>{title}</h2>
 
                 {
                     category == "New" ? 

@@ -1,7 +1,7 @@
 .gridCardsContainer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: var(--MarginM);
 }
 
 .gridCardTitleContainer {
@@ -9,15 +9,10 @@
     justify-content: space-between;
 }
 
-.gridCardTitle {
-    font-weight: 600;
-    font-size: 1.7rem;
-}
-
 .GridCards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(13rem, auto));
-    gap: 3rem;
+    gap: var(--MarginM);
     justify-content: space-between;
     align-items: center;
 }

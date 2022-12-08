@@ -1,11 +1,13 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useReducer, useRef } from 'react';
 import { useParams } from "react-router-dom";
-import { Products } from '../utils/Products';
 import { useState } from 'react';
 import { AiFillStar } from "react-icons/ai";
 import { MdArrowForwardIos } from 'react-icons/md'
-import { shoppingReducer } from '../Reducers/shoppingReducer';
+
 import styles from '../css/ProductDetails.module.css';
+
+import { Products } from '../utils/Products';
+import { shoppingReducer } from '../Reducers/shoppingReducer';
 import ReactImageMagnify from 'react-image-magnify';
 import { TYPES } from '../Actions/shoppingActions';
 
@@ -87,7 +89,7 @@ export function ProductDetails() {
                 
 
                 <div className={styles.pictures}>
-                    {
+                    {   
                         images.map((image, i) => (
                             <img 
                             className={i == 0 ? 'imgActive' : ''}
@@ -133,7 +135,7 @@ export function ProductDetails() {
                         <AiFillStar size={22} color='#f6c74b'/>
                         <p>Reviews</p>
                     </div>
-                    <h2 className={styles.title}>{title}</h2>
+                    <h2 className={`${styles.title} title`}>{title}</h2>
                     <div className={styles.prices}>
                         <p className={styles.salePrice}>${salePrice}</p>
                         <p className={styles.originalPrice}>${originalPrice}</p>
@@ -141,7 +143,7 @@ export function ProductDetails() {
                     </div>
                 </div>
 
-                <hr />
+                <hr className={styles.hr} />
 
                 <div className={styles.details}>
                     <div className={`${styles.detail} ${styles.sizes}`}>
@@ -177,7 +179,7 @@ export function ProductDetails() {
                     </div>
                     <div className={`${styles.detail}`}>
                         <h3>Details</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ullam error, voluptate sequi adipisci nesciunt voluptatibus enim nemo consequatur recusandae aliquam delectus accusamus quisquam, perferendis totam quae, ut rem fugit dolores nulla aperiam corporis non. Mollitia rem nam eveniet cupiditate aspernatur magni fugiat, minima commodi cum saepe error a enim ratione delectus reiciendis natus!</p>
+                        <p>For decades, Harajuku has been the epicenter of unconventional clothing styles. Beginning with kawaii in the 1970s, Harajuku styles have grown to include gothic elements, alongside big-name brands like American Eagle, H&M, and Otaku.</p>
                     </div>
                     <hr />
                     <div className={styles.dropdownDescriptions}>
@@ -235,11 +237,11 @@ export function ProductDetails() {
                             <label htmlFor="dropdown-head-returns">Shipping & Returns <MdArrowForwardIos className={styles.arrow}/></label>
                             <div className={`${styles.dropdownText} ${styles.dropdownTextReturns}`}>
                                 <h3 className={styles.dropdownTextSubtitle}>Processing Time</h3>
-                                <p>1 - 3 Business Days</p>
+                                <p className={styles.dropdownParagrath}>1 - 3 Business Days</p>
                                 <h3 className={styles.dropdownTextSubtitle}>Estimated Shipping Times</h3>
-                                <p>8 - 14 Bussiness Days</p>
+                                <p className={styles.dropdownParagrath}>8 - 14 Bussiness Days</p>
                                 <h3 className={styles.dropdownTextSubtitle}>30 Days Money Back Guaranteed</h3>
-                                <p>You can return product within 30 days, as long as the products are not worn, washed or damaged.</p>
+                                <p className={styles.dropdownParagrath}>You can return product within 30 days, as long as the products are not worn, washed or damaged.</p>
                             </div>
                         </div>
 
@@ -251,18 +253,15 @@ export function ProductDetails() {
                                 <form action="">
                                     <div className={styles.labelsContainer}>
                                         <div className={styles.labelContainer}>
-                                            <label htmlFor="contactName">Name</label>
-                                            <input className={styles.input} type="text" id='contactName'/>
+                                            <input className={styles.input} type="text" id='contactName' placeholder='Name'/>
                                         </div>
                                         <div className={styles.labelContainer}>
-                                            <label htmlFor="email">Email</label>
-                                            <input className={styles.input} type="email" id='email'/>
+                                            <input className={styles.input} type="email" id='email' placeholder='Email'/>
                                         </div>
                                     </div>
                                     <div className={styles.labelContainer}>
-                                        <label htmlFor="menssage">Menssage</label>
-                                        <textarea className={styles.input} name="" id="menssge" cols="30" rows="10"></textarea>
-                                        <input className={`${styles.btn} ${styles.input}`} type="submit"/>
+                                        <textarea className={styles.input} name="" id="menssge" cols="30" rows="10" placeholder='Menssage'></textarea>
+                                        <button className='btn'>Submit</button>
                                     </div>
                                 </form>
                             </div>

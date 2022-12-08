@@ -2,6 +2,7 @@
     height: 28rem;
     cursor: pointer;
     position: relative;
+    margin-bottom: var(--MarginM);
 }
 
 .cardImgContent {
@@ -46,10 +47,10 @@
     top: 0;
     left: 0;
     width: max-content;
-    padding: .7rem;
+    padding: var(--MarginS);
     color: #EB565F;
     background-color: #FCEEEE;
-    border-bottom-right-radius: .5rem;
+    border-bottom-right-radius: var(--MarginS);
     z-index: 10;
 }
 
@@ -59,13 +60,13 @@
 
 .cardPlus { 
     width: max-content;
-    padding: .7rem;
+    padding: var(--MarginS);
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 1000;
-    border-top-left-radius: .5rem;
+    border-top-left-radius: var(--MarginS);
 }
 
 .cardHeart {
@@ -84,9 +85,9 @@
 
 .cardContent {
     display: flex;
-    margin-top: .5rem;
+    margin-top: var(--MarginS);
     flex-direction: column;
-    gap: .5rem;
+    gap: var(--MarginS);
 }
 
 .review {
@@ -95,7 +96,7 @@
 }
 
 .review p {
-    margin-left: .3rem;
+    margin-left: var(--MarginS);
 }
 
 .cardName {
@@ -105,7 +106,7 @@
 
 .cardPrices {
     display: flex;
-    gap: .7rem;
+    gap: var(--MarginS);
     font-size: 1.1rem;
 }
 
