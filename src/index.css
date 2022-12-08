@@ -10,7 +10,7 @@
 :root {
   /* Colors */
   --Black: #000;
-  --White: #fff;
+  --White: #fbfbfb;
   --PrimaryColor: ;
   --SecondaryColor: ;
   --TertaryColor: ;
@@ -39,7 +39,7 @@ html {
 
 body {
   scroll-behavior: smooth;
-  background-color: #fbfbfb;
+  background-color: var(--White);
 }
 
 .title {

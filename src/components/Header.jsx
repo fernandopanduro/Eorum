@@ -1,9 +1,14 @@
-import styles from "../css/Header.module.css";
 import { CgShoppingCart } from 'react-icons/cg';
 import { HiOutlineUser } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Products } from '../utils/Products'
+import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
+
+import { Products } from '../utils/Products';
+
+import styles from "../css/Header.module.css";
+
+
 
 
 export function Header() {
@@ -30,9 +35,15 @@ export function Header() {
                 <h2><Link to='/'>EORUM</Link></h2>
 
                 <ul className={`${styles.list} ${styles.listResponsive} ${isOpen && styles.activelistResponsive}`}>
-                    <li className={styles.listItem}><Link to='/new'>New🔥</Link></li>
+                    <li className={`${styles.listItem}`}><Link to='/new'>New🔥</Link></li>
                     <li className={styles.listItem}><Link to='/jackets'>Jackets</Link></li>
                     <li className={styles.listItem}><Link to='/hoddies'>Hoddies</Link></li>
+                    <li className={`${styles.listItem} ${styles.itemSocial}`}>
+                        <a href='https://google.com' target='blank'><AiFillFacebook size={25} /></a>
+                        </li>
+                    <li className={`${styles.listItem} ${styles.itemSocial}`}>
+                        <a href='https://www.instagram.com/eorum.oficial/t' target='blank'><AiFillInstagram size={25} /></a>
+                        </li>
                 </ul>  
                 <ul className={styles.list}>
                     <li className={styles.listItem}>
