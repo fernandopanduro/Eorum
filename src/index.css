@@ -4,19 +4,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+/* Propertys */
+
+:root {
+  /* Colors */
+  --Black: #000;
+  --White: #fff;
+  --PrimaryColor: ;
+  --SecondaryColor: ;
+  --TertaryColor: ;
+
+  /* Margins */
+  --MarginXXL: 8rem;
+  --MarginXL: 6rem;
+  --MarginX: 4rem;
+  --MarginM: 2rem;
+  --MarginNormal: 1.2rem;
+  --MarginS: .7rem;
+
+  /* Seconds */
+  --Seconds: .3s;
+
+}
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -32,6 +42,43 @@ body {
   background-color: #fbfbfb;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.subtitle {
+  margin-bottom: var(--MarginS);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+}
+
+.subtitlePage {
+  font-size: 1.2rem;
+  margin-top: var(--MarginM);
+}
+
+.paragrahtTitle {
+  font-weight: 600;
+  margin-bottom: var(--MarginS);
+  text-transform: uppercase;
+}
+
+.paragrath {
+  margin-bottom: var(--MarginNormal);
+  letter-spacing: 1.15px;
+}
+
+.containerPage {
+  margin-top: var(--MarginM);
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -39,4 +86,54 @@ body {
 
 .imgActive {
   border: 3px solid black;
+}
+
+hr {
+  margin-top: var(--MarginM);
+  width: 100%;
+  max-width: 768px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+/* Forms */
+
+.form {
+  margin-top: var(--MarginM);
+  width: 100%;
+  max-width: 768px;
+}
+
+.btn {
+  margin-top: var(--MarginM);
+  border-radius: .5rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  padding: .6rem 1rem;
+  color: white;
+  background-color: black;
+  max-width: 100%;
+  cursor: pointer;
+  width: 368px;
+}
+
+.input {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 1rem;
+  color: #757575;
+  outline: none;
+  margin-bottom: var(--MarginS);
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer input {
+  margin-right: .3rem ;
+}
+
+.checkboxContainer label {
+  opacity: .3;
 }

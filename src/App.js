@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
+
+import styles from './css/App.module.css';
+
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { LandingPage } from './Pages/LandingPage';
-import styles from './css/App.module.css';
 import { GridCards } from "./components/GridCards";
 import { About } from './Pages/About'
 import { Contact } from "./Pages/Contact";
@@ -19,6 +21,10 @@ import { Payment } from "./Pages/Payment";
 import { PaidOut } from "./Pages/PaidOut";
 
 function App() {
+
+
+
+
   return (
     <Router>
 

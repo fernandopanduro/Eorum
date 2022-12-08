@@ -1,22 +1,3 @@
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 3rem;
-}
-
-.aboutContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    width: 100%;
-    letter-spacing: 1.5px;
-}
-
-.aboutContainer img {
-    margin-bottom: 2rem;
-}
-
-.paragrath {
-    margin-bottom: 2rem;
+.img {
+    margin-bottom: var(--MarginM);
 }

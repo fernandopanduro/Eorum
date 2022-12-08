@@ -21,8 +21,10 @@ export function Header() {
     // }, [])
 
 
+
+
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${styles.fine} ${styles.fineTop}`} id='header'>
             <div className={`container ${styles.headerContainer}`}>  
 
                 <h2><Link to='/'>EORUM</Link></h2>

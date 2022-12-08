@@ -1,34 +1,7 @@
-.title {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.form {
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 768px;
-}
-
 .fieldset {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-}
-
-.subtitle {
-    margin-bottom: .7rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 1.15px;
-}
-
-.input {
-    border: 1px solid rgba(0, 0, 0, .3);
-    padding: .5rem 1rem;
-    border-radius: .3rem;
-    margin-bottom: .7rem;
-    letter-spacing: 1px;
 }
 
 .names,
@@ -36,51 +9,31 @@
     display: flex;
 }
 
-.names .input {
+.names input {
     flex-basis: 50%  ;
 }
 
-.names .input:first-of-type {
-    margin-right: .7rem;
+.names input:first-of-type {
+    margin-right: var(--MarginS);
 }
 
-.address .input {
-    flex-basis: 33%;
+
+.address input:nth-of-type(1),
+.address input:nth-of-type(2) {
+    margin-right: var(--MarginS);
 }
 
-.address .input:nth-of-type(1),
-.address .input:nth-of-type(2) {
-    margin-right: .7rem;
-}
-
-.checkboxContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.checkboxContainer input {
-    margin: 0;
-    margin-right: .2rem;
-
-}
-
-.checkboxContainer label {
-    opacity: .5;
-}
+/* Btns */
 
 .shippingBtns {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    align-items: center;
+    font-size: 1rem;
 }
 
-.shippingBtn {
-    border: 1px solid black;
-    padding: .9rem;
-    border-radius: .5rem;
-    color: white;
-    background-color: black;
+.btnShipping {
+    margin-top: 0;
 }
 
 .shoppingCart {
@@ -95,13 +48,13 @@
 .paymentsImgs {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2rem;
+    margin-top: var(--MarginM);
     width: 100%;
     max-width: 768px;
 }
 
 .paymentItem {
-    margin-right: .7rem;
+    margin-right: var(--MarginS);
 }
 
 .policys {
@@ -112,12 +65,6 @@
 }
 
 .policy {
-    margin-right: .7rem;
+    margin-right: var(--MarginS);
 }
 
-hr {
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 768px;
-    background-color: rgba(0, 0, 0, .1);
-}

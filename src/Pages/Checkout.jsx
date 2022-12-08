@@ -13,44 +13,44 @@ export function Checkout() {
         <section className='container'>
             <Ruta ruta='Checkout' />
 
-            <h2 className={styles.title}>Checkout</h2>
+            <h2 className='title'>Checkout</h2>
 
-            <form action="" className={styles.form}>
+            <form action="" className='form'>
 
                 <fieldset className={styles.fieldset}>
-                    <h3 className={styles.subtitle}>Contact information</h3>
-                    <input className={styles.input} type="email" placeholder='Email' required autoComplete='email' />
-                    <div className={styles.checkboxContainer}>
-                        <input className={styles.input} type="checkbox" name="emailNewOffers" id="emailNewOffers" defaultChecked/>
+                    <h3 className='subtitle'>Contact information</h3>
+                    <input className='input' type="email" placeholder='Email' required autoComplete='email' />
+                    <div className='checkboxContainer'>
+                        <input type="checkbox" name="emailNewOffers" id="emailNewOffers" defaultChecked/>
                         <label htmlFor="emailNewOffers">Email me with news and exclusive offers</label>
                     </div>
                 </fieldset>
 
                 <fieldset className={styles.fieldset}>
-                    <h3 className={styles.subtitle}>Shipping address</h3>
-                    <select className={styles.input} name="" id="">
+                    <h3 className='subtitle'>Shipping address</h3>
+                    <select className='input' name="" id="">
                         <option value="">Mexico</option>
                         <option value="">EUA</option>
                         <option value="">Canada</option>
                     </select>
                     <div className={styles.names}>
-                        <input className={styles.input} type="text" required placeholder='First Name' autoComplete='name'/>
-                        <input className={styles.input} type="text" required placeholder='Last Name' autoComplete='last-name'/>
+                        <input className='input' type="text" required placeholder='First Name' autoComplete='name'/>
+                        <input className='input' type="text" required placeholder='Last Name' autoComplete='last-name'/>
                     </div>
-                    <input className={styles.input} type="text" placeholder='Address' name="" id="" />
-                    <input className={styles.input} type="text" placeholder='Aparment, suite, etc. (optional)' name="" id="" />
+                    <input className='input' type="text" placeholder='Address' name="" id="" />
+                    <input className='input' type="text" placeholder='Aparment, suite, etc. (optional)' name="" id="" />
                     <div className={styles.address}>
-                        <input className={styles.input} type="number" placeholder='Postal Code' />
-                        <input className={styles.input} type="text" placeholder='City' autoComplete='city' />
-                        <select className={styles.input} name="state" id="">
+                        <input className='input' type="number" placeholder='Postal Code' />
+                        <input className='input' type="text" placeholder='City' autoComplete='city' />
+                        <select className='input' name="state" id="">
                             <option value="">Sinaloa</option>
                             <option value="">Jalisto</option>
                             <option value="">Quintana Roo</option>
                         </select>
                     </div>
-                    <input className={styles.input} type="numbe" placeholder='Phone' required/>
-                    <div className={styles.checkboxContainer}>
-                        <input className={styles.input} type="checkbox" defaultChecked name="saveInfo" id="saveInfo" />
+                    <input className='input' type="numbe" placeholder='Phone' required/>
+                    <div className='checkboxContainer'>
+                        <input type="checkbox" defaultChecked name="saveInfo" id="saveInfo" />
                         <label htmlFor="saveInfo">Save this information for next time.</label>
                     </div>
                 </fieldset>
@@ -59,7 +59,7 @@ export function Checkout() {
 
                 <fieldset className={styles.shippingBtns}>
                     <Link to='/shoppingCart' className={styles.shoppingCart}> <MdArrowForwardIos size={25+4} className={styles.arrow}/> Return to cart</Link>
-                    <button className={styles.shippingBtn}><Link to='/payment'>Continue for shipping</Link></button>
+                    <button className={`${styles.btnShipping} btn`}><Link to='/payment'>Continue for shipping</Link></button>
                 </fieldset>
 
             </form>
