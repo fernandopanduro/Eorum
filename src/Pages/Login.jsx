@@ -6,18 +6,18 @@ export function Login() {
     return (
         <section className={`container ${styles.login}`}>
             <Ruta ruta='Login' />
-            <form className={styles.form}>
-                <h2 className={styles.title}>Login</h2>
-                <div className={styles.labelContainer}>
-                    <label className={styles.label} htmlFor="emailLogin">Email</label>
-                    <input className={styles.input} type="text" id="emailLogin" autoComplete="email" required/>
+            <h2 className='title'>Login</h2>
+            <form className={`${styles.form} form`}>
+                <div>
+                    <label className={styles.label} htmlFor="emailLogin"></label>
+                    <input className='input' type="text" id="emailLogin" autoComplete="email" placeholder="Email" required/>
                 </div>
-                <div className={styles.labelContainer}>
-                    <label className={styles.label} htmlFor="passwordLogin">Password <span>Forgot?</span></label>
-                    <input className={styles.input} type="password" id="passwordLogin" autoComplete="password" required/>
+                <div>
+                    <input className='input' type="password" id="passwordLogin" autoComplete="password" placeholder="Password" required/>
                 </div>
-                <input type="submit" className={styles.btnSubmit} name="" id="" value='Sing In'/>
-                <Link to='/create-acount'>Create Acount</Link>
+                <button className="btn"><Link to='/'>Sing In</Link></button>
+                <Link className={styles.link} to='/create-acount'>Create Acount</Link>
+                <Link className={styles.link} >Forgot?</Link>
             </form>
         </section>
     )
