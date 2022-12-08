@@ -32,8 +32,15 @@
     font-size: 1rem;
 }
 
+@media (max-width: 468px) {
+    .shippingBtns {
+        flex-direction: column-reverse;
+    }
+}
+
 .btnShipping {
     margin-top: 0;
+    margin-bottom: var(--MarginS);
 }
 
 .shoppingCart {

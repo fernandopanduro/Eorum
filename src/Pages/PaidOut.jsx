@@ -13,7 +13,7 @@ export function PaidOut() {
                 <h3>Thanks For Shopping</h3>
                 <p>Your order has been confirmed check your email</p>
             </div>
-            <button className={styles.btn}><Link to='/'>Continue Shopping</Link></button>
+            <button className='btn'><Link to='/'>Continue Shopping</Link></button>
         </section>
     )
 }

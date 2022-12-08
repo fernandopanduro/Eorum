@@ -111,9 +111,9 @@ hr {
   padding: .6rem 1rem;
   color: white;
   background-color: black;
-  max-width: 100%;
+  max-width: 420px;
   cursor: pointer;
-  width: 420px;
+  min-width: 100%;
 }
 
 .input {
