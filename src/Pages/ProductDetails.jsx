@@ -8,7 +8,6 @@ import styles from '../css/ProductDetails.module.css';
 
 import { Products } from '../utils/Products';
 import { shoppingReducer } from '../Reducers/shoppingReducer';
-import ReactImageMagnify from 'react-image-magnify';
 import { TYPES } from '../Actions/shoppingActions';
 
 
@@ -104,22 +103,7 @@ export function ProductDetails() {
                 
 
                 <div className={styles.picture}>
-                    <ReactImageMagnify {...{
-                        smallImage: {
-                            alt: {title},
-                            isFluidWidth: true,
-                            src: img,
-                        },
-                        largeImage: {
-                            src: img,
-                            width: 1200,
-                            height: 1800
-                        }, 
-                        enlargedImageContainerDimensions: {
-                            width: '150%',
-                            height: '150%'
-                        }
-                    }} />
+                    <img src={img} alt={title} />
                 </div>
 
 
