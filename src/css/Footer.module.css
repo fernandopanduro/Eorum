@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    padding: 4rem 0;
+    padding: var(--MarginX) 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,19 +27,17 @@
 
 .footerIcons {
     display: flex;
-    gap: .7rem;
 }
 
 .footerList {
     display: flex;
     flex-direction: column;
     max-width: 350px;
-    gap: .7rem;
 }
 
 @media (max-width: 720px) {
     .footerList {
-       margin-bottom: .7rem;
+       margin-bottom: var(--MarginS);
        max-width: 100%;
 
     }
@@ -52,21 +50,20 @@
     color: #fdfdfd;
     border: 1px solid #fdfdfd;
     border-radius: 1px;
-    margin-top: .7rem;
-    margin-bottom: .7rem;
+    margin-top: var(--MarginS);
+    margin-bottom: var(--MarginS);
 }
 
 .footerLabel div {
     display: flex;
     width: 100%;
-    padding: .7rem;
-    gap: .7rem;
+    padding: var(--MarginS);
 }
 
 .footerInput {
     width: 100%;
     background-color: transparent;
-    margin-left: .7rem;
+    margin-left: var(--MarginS);
     outline: none;
 }
 
@@ -78,20 +75,19 @@
     background-color: #fdfdfd;
     color: #111;
     height: 100%;
-    padding: .7rem;
+    padding: var(--MarginS);
     cursor: pointer;
 }
 
 .payments {
     display: flex;
-    gap: .7rem;
 }
 
 .payments li {
-    margin-right: .7rem;
+    margin-right: var(--MarginS);
 }
 
 .copyrights {
-    margin-top: 4rem;
+    margin-top: var(--MarginX);
     font-weight: 600;
 }
