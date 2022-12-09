@@ -6,7 +6,7 @@ import { Ruta } from '../components/Ruta'
 
 export function Refund() {
     return (
-        <section className='container'>
+        <section className='container zIndex'>
             <Fade top>
                 <Ruta ruta='Refund' />
                 <h2 className='title'>Refund</h2>

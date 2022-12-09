@@ -6,7 +6,7 @@ import { Ruta } from '../components/Ruta'
 
 export function Contact() {
     return (
-        <section className={`container`}>
+        <section className={`container zIndex`}>
             <Fade top>
                 <Ruta ruta='Contact'/>
                 <h2 className='title'>Contact</h2>

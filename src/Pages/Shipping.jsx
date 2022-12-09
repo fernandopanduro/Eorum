@@ -10,7 +10,7 @@ import webp from '../pintures/shopping.webp'
 
 export function Shipping() {
     return (
-        <section className='container'>
+        <section className='container zIndex'>
             <Fade top>
                 <Ruta ruta='Shipping' />
                 <h2 className='title'>Shipping</h2>

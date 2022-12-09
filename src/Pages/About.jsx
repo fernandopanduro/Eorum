@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 export function About() {
     return (
-        <section className='container'>
+        <section className='container zIndex'>
             <Fade top>
                 <Ruta ruta='About' />
                 <h2 className='title'>About</h2>

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 export function PaidOut() {
     return (
-        <section className={styles.paidOut}>
+        <section className={`${styles.paidOut} zIndex`}>
             <div className={styles.shoppingCartContainer}>
                 <GiShoppingCart className={styles.shoppingCart} size={23}/>
             </div>

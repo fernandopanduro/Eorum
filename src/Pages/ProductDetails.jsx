@@ -166,7 +166,7 @@ export function ProductDetails() {
 
                         </div>
                         <div className={`${styles.detail} ${styles.btns}`}>
-                            <button onClick={() => addToCard(productId)} className={styles.btn}>Add To Cart</button>
+                            <button className={styles.btn}>Add To Cart</button>
                             <input className={`${styles.btn} ${styles.btnBuy}`} type="submit" value='Buy It Now'/>
                         </div>
                         <div className={`${styles.detail}`}>

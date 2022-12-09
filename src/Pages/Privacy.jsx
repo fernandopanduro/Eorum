@@ -6,7 +6,7 @@ import { Ruta } from '../components/Ruta'
 
 export function Privacy() {
     return (
-        <section className={`container`}>
+        <section className={`container zIndex`}>
             <Fade top>
                 <Ruta ruta='Privacy' />
                 <h2 className='title'>Privacy</h2>

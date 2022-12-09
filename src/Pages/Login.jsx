@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 export function Login() {
     return (
-        <section className={`container ${styles.login}`}>
+        <section className={`container zIndex ${styles.login}`}>
             <Fade top>
                 <Ruta ruta='Login' />
                 <h2 className='title'>Login</h2>

@@ -38,10 +38,10 @@ export function ShoppingCart() {
     
 
     return (
-        <section className='container'>
+        <section className={`${styles.shoppingCart} container`}>
             <Fade top>
                 <Ruta ruta='Shopping Cart' />
-                <h2 className={styles.title}>Shopping Cart</h2>
+                <h2 className='title'>Shopping Cart</h2>
             </Fade>
 
             <Fade bottom>
@@ -75,7 +75,7 @@ export function ShoppingCart() {
                     </div>
                 </div>
 
-                <button className={styles.btn}><Link to='/checkout'>Cheackout</Link></button>
+                <button className='btn'><Link to='/checkout'>Cheackout</Link></button>
             </Fade>
 
         </section>

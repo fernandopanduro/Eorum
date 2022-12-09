@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 export function Payment() {
     return (
-        <section className='container'>
+        <section className='container zIndex'>
             <Fade top>
                 <Ruta ruta='Payment' />
                 <h2 className='title'>Payment</h2>

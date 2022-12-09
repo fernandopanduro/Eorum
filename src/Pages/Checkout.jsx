@@ -14,7 +14,7 @@ import americanExpress from '../pintures/american-express.png'
 
 export function Checkout() {
     return (
-        <section className='container'>
+        <section className={`${styles.checkout} container`}>
             <Fade top>
                 <Ruta ruta='Checkout' />
                 <h2 className='title'>Checkout</h2>

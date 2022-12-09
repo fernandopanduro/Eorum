@@ -15,6 +15,7 @@ hr {
     grid-template-columns: 7fr 4fr;
     grid-template-rows: repeat(5, 1fr);
     gap: var(--MarginX);
+    z-index: -1;
 }
 
 @media (max-width: 768px) {

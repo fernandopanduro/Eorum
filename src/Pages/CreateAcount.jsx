@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 export function CreateAcount() {
     return (
-        <section className={`container ${styles.createAcount}`}>
+        <section className={`container zIndex ${styles.createAcount}`}>
             <Fade top>
                 <Ruta ruta='Create Acount' />
                 <h2 className='title'>Create Acount</h2>

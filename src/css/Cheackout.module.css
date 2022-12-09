@@ -1,3 +1,7 @@
+.checkout {
+    z-index: -1;
+}
+
 .fieldset {
     display: flex;
     flex-direction: column;

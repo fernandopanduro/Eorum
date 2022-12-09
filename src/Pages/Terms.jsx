@@ -6,7 +6,7 @@ import styles from '../css/Terms.module.css';
 
 export function Terms() {
     return (
-        <section className={`container`}>
+        <section className={`container zIndex`}>
             <Fade top>           
                 <Ruta ruta='Terms' />
                 <h2 className='title'>Terms</h2>
