@@ -18,9 +18,7 @@ import Fade from 'react-reveal/Fade';
 
 export function ProductDetails() {
 
-    const {productId} = useParams();
-    console.log(productId)
-
+    const {productId} = useParams()
     const [state, dispatch] = useReducer(shoppingReducer, Products)    
     const {Jackets, Hoddies, Cart} = state;
 
