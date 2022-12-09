@@ -1,3 +1,12 @@
+.return {
+    display: flex;
+    margin-bottom: var(--MarginS);
+}
+
+.arrowRuta {
+    transform: rotate(180deg);
+}
+
 hr {
     border: none;
     width: 100%;
