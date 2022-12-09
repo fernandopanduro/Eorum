@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .title {
@@ -153,4 +154,22 @@
 .btn:hover {
     background-color: black;
     color: white;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 7%;
+}
+
+.scrollArrow {
+    animation: scroll 1s infinite cubic-bezier(.17,.67,1,.41);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
 }
