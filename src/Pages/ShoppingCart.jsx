@@ -1,6 +1,10 @@
 import { useEffect, useReducer, useState } from 'react';
-import styles from '../css/ShoppingCart.module.css';
 import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
+
+import styles from '../css/ShoppingCart.module.css';
+
+import Fade from 'react-reveal/Fade';
+
 import { Products } from '../utils/Products';
 import { Ruta } from '../components/Ruta'
 import { CartItem } from '../components/CartItem';
@@ -35,42 +39,45 @@ export function ShoppingCart() {
 
     return (
         <section className='container'>
-            <Ruta ruta='Shopping Cart' />
+            <Fade top>
+                <Ruta ruta='Shopping Cart' />
+                <h2 className={styles.title}>Shopping Cart</h2>
+            </Fade>
 
-            <h2 className={styles.title}>Shopping Cart</h2>
-
-            <div className={styles.itemsContainer}>
-                <p>Items: {Products.Cart.length}</p>
-                <button onClick={clearCart}>Clear To Cart</button>
-            </div>
-
-            <article className={styles.box}>
-                {
-                    Products.Cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} />)
-                }
-            </article>
-
-
-            <div className={styles.pricesContainer}>
-                <div className={styles.priceContainer}>
-                    <p>Subtotal Price:</p> 
-                    <p>${totalPrices}</p>
+            <Fade bottom>
+                <div className={styles.itemsContainer}>
+                    <p>Items: {Products.Cart.length}</p>
+                    <button onClick={clearCart}>Clear To Cart</button>
                 </div>
-                <div className={styles.priceContainer}>
-                    <p>Shipping Price:</p>
-                    <p>$8</p>
-                </div>
-            </div>
-            
-            <div className={styles.totalContainer}>
-                <div className={styles.priceContainer}>
-                    <p>Total Price:</p> 
-                    <p>${totalPrices + 8}</p>
-                </div>
-            </div>
 
-            <button className={styles.btn}><Link to='/checkout'>Cheackout</Link></button>
-            {/* <button><Link to='/checkout'>CheackOut</Link></button> */}
+                <article className={styles.box}>
+                    {
+                        Products.Cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} />)
+                    }
+                </article>
+
+
+                <div className={styles.pricesContainer}>
+                    <div className={styles.priceContainer}>
+                        <p>Subtotal Price:</p> 
+                        <p>${totalPrices}</p>
+                    </div>
+                    <div className={styles.priceContainer}>
+                        <p>Shipping Price:</p>
+                        <p>$8</p>
+                    </div>
+                </div>
+                
+                <div className={styles.totalContainer}>
+                    <div className={styles.priceContainer}>
+                        <p>Total Price:</p> 
+                        <p>${totalPrices + 8}</p>
+                    </div>
+                </div>
+
+                <button className={styles.btn}><Link to='/checkout'>Cheackout</Link></button>
+            </Fade>
+
         </section>
     )
 }
