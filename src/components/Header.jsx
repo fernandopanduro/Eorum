@@ -18,7 +18,7 @@ export function Header() {
 
 
     return (
-        <header className={`${styles.header} ${styles.fine} ${styles.fineTop}`} id='header'>
+        <header className={`${styles.header}`} id='header'>
             <Fade top>
                 <div className={`container ${styles.headerContainer}`}>  
 
@@ -44,7 +44,7 @@ export function Header() {
                         </li>
                         <li className={styles.listItem}> <Link to='/login'><HiOutlineUser size={25}/></Link></li>
                         <li className={`${styles.listItem} ${styles.shoppingCart}`}> 
-                            <div /* onClick={() => setProductLength(productLength + 1)} */ className={styles.shoppingCartBall}>{/* {productLength} */}</div> 
+                            <div className={styles.shoppingCartBall}></div> 
                             <Link to='/shoppingCart'><CgShoppingCart size={25} /></Link>
                         </li> 
                     </ul>
