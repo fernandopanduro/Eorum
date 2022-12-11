@@ -14,7 +14,7 @@ export function LandingPage() {
         <div className={`${styles.landingPage}`}>
             <Helmet>
                 <title>Home 🏠 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Eorum Website" />
             </Helmet>
             <Banner />
             <Fade bottom>                

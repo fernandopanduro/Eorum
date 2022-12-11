@@ -11,7 +11,7 @@ export function Terms() {
         <section className={`container zIndex`}>
             <Helmet>
                 <title>Terms 📃 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Terms Eorum Website" />
             </Helmet>
             <Fade top>           
                 <Ruta ruta='Terms' />

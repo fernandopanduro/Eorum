@@ -19,7 +19,7 @@ export function Checkout() {
         <section className={`${styles.checkout} container`}>
             <Helmet>
                 <title>Checkout || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Checkout Eorum Website" />
             </Helmet>
 
             <Fade top>

@@ -11,7 +11,7 @@ export function Contact() {
         <section className={`container zIndex`}>
             <Helmet>
                 <title>Contact ✉️ || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Contact Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Contact'/>

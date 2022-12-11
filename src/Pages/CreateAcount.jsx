@@ -12,7 +12,7 @@ export function CreateAcount() {
         <section className={`container zIndex ${styles.createAcount}`}>
             <Helmet>
                 <title>Create Acount 👤 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Create Acount Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Create Acount' />

@@ -42,7 +42,7 @@ export function ShoppingCart() {
         <section className={`${styles.shoppingCart} container`}>
             <Helmet>
                 <title>Shopping Cart 🛒 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Shopping Cart Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Shopping Cart' />

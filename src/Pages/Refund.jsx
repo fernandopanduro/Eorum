@@ -11,7 +11,7 @@ export function Refund() {
         <section className='container zIndex'>
             <Helmet>
                 <title>Refund 📃 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Refund Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Refund' />

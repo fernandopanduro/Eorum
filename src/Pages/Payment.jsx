@@ -12,7 +12,7 @@ export function Payment() {
         <section className='container zIndex'>
             <Helmet>
                 <title>Payment ✅ || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Payment Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Payment' />

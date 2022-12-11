@@ -15,7 +15,7 @@ export function Shipping() {
         <section className='container zIndex'>
             <Helmet>
                 <title>Shipping 📃 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Shipping Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Shipping' />

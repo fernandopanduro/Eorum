@@ -13,7 +13,7 @@ export function PaidOut() {
         <section className={`${styles.paidOut} zIndex`}>
             <Helmet>
                 <title>Paidout ⭐ || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Paidout Eorum Website" />
             </Helmet>
             <div className={styles.shoppingCartContainer}>
                 <GiShoppingCart className={styles.shoppingCart} size={23}/>

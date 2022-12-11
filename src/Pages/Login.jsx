@@ -13,7 +13,7 @@ export function Login() {
         <section className={`container zIndex ${styles.login}`}>
             <Helmet>
                 <title>Login 👤 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Login Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Login' />

@@ -11,7 +11,7 @@ export function Privacy() {
         <section className={`container zIndex`}>
             <Helmet>
                 <title>Privacy 📃 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content="Privacy Eorum Website" />
             </Helmet>
             <Fade top>
                 <Ruta ruta='Privacy' />
