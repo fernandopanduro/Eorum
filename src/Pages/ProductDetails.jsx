@@ -76,18 +76,13 @@ export function ProductDetails() {
 
     // quantityNumber
 
-    const [quantityNumber, setQuantityNumber] = useState(1)
-
-    
-
-
-    
+    const [quantityNumber, setQuantityNumber] = useState(1);
 
     return (
         <section className='container zIndex'>
             <Helmet>
                 <title> {title} 👔 || Eorum 🔥</title>
-                <meta name="description" content="About Eorum Website" />
+                <meta name="description" content={title} />
             </Helmet>
             <Link to='/'>
                 <div className={styles.return}>

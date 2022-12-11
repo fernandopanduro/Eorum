@@ -62,10 +62,14 @@ hr {
         margin-right: 0;
         flex-direction: row;
         order: 1;
+        min-width: 100px;
+        overflow: auto;
+        width: auto;
     }
 }
 
 .pictures img {
+    width: 100px;
     height: 100px;
     opacity: 1;
     margin-top: var(--MarginS);
