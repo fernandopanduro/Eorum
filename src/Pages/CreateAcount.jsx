@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 export function CreateAcount() {
     return (
-        <section className={`container zIndex ${styles.createAcount}`}>
+        <section className={`container ${styles.createAcount}`}>
             <Helmet>
                 <title>Create Acount 👤 || Eorum 🔥</title>
                 <meta name="description" content="Create Acount Eorum Website" />
@@ -32,7 +32,7 @@ export function CreateAcount() {
                     <div>
                         <input className='input' type="password" id="password" autoComplete="password" placeholder="Password" required/>
                     </div>
-                    <button className={`btn`}><Link to='/'>Create</Link></button>
+                    <Link to='/'><button className={`btn`}>Create</button></Link>
                     <Link className={styles.link} to='/login'>Login</Link>
                 </Fade>
             </form>

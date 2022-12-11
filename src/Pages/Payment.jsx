@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 export function Payment() {
     return (
-        <section className='container zIndex'>
+        <section className='container'>
             <Helmet>
                 <title>Payment ✅ || Eorum 🔥</title>
                 <meta name="description" content="Payment Eorum Website" />
@@ -47,7 +47,7 @@ export function Payment() {
                         </fieldset>
                     </Fade>
                 </form>
-                    <button className='btn'><Link to='/paidOut'>Pay</Link></button>
+                <Link to='/paidOut'><button className='btn'>Pay</button></Link>
             </Fade>
         </section>
     )

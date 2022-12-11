@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet';
 
 export function PaidOut() {
     return (
-        <section className={`${styles.paidOut} zIndex`}>
+        <section className={`${styles.paidOut}`}>
             <Helmet>
                 <title>Paidout ⭐ || Eorum 🔥</title>
                 <meta name="description" content="Paidout Eorum Website" />
@@ -26,7 +26,7 @@ export function PaidOut() {
                         <p>Your order has been confirmed check your email</p>
                     </Fade>
                 </div>
-                <button className='btn'><Link to='/'>Continue Shopping</Link></button>
+                <Link to='/'><button className='btn'>Continue Shopping</button></Link>
             </Fade>
         </section>
     )

@@ -1,5 +1,5 @@
-import { useEffect, useReducer, useState } from 'react';
-import { shoppingInitialState, shoppingReducer } from '../Reducers/shoppingReducer';
+import { useReducer } from 'react';
+import { shoppingReducer } from '../Reducers/shoppingReducer';
 
 import styles from '../css/ShoppingCart.module.css';
 
@@ -80,9 +80,9 @@ export function ShoppingCart() {
                     </div>
                 </div>
 
-                <button className='btn'><Link to='/checkout'>Cheackout</Link></button>
+                <Link to='/checkout'><button className='btn'>Cheackout</button></Link>
             </Fade>
 
-        </section>
+        </section>  
     )
 }

@@ -72,7 +72,7 @@ export function Checkout() {
 
                     <fieldset className={styles.shippingBtns}>
                         <Link to='/shoppingCart' className={styles.shoppingCart}> <MdArrowForwardIos size={25} className={styles.arrow}/> Return to cart</Link>
-                        <button className={`${styles.btnShipping} btn`}><Link to='/payment'>Continue for shipping</Link></button>
+                        <Link to='/payment'><button className={`${styles.btnShipping} btn`}>Continue for shipping</button></Link>
                     </fieldset>
                 </Fade>
 

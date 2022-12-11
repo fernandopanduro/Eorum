@@ -1,9 +1,3 @@
-
-
-.shoppingCart {
-    z-index: -1;
-}
-
 .itemsContainer {
     display: flex;
     justify-content: space-between;

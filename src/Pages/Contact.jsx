@@ -8,7 +8,7 @@ import { Ruta } from '../components/Ruta'
 
 export function Contact() {
     return (
-        <section className={`container zIndex`}>
+        <section className={`container`}>
             <Helmet>
                 <title>Contact ✉️ || Eorum 🔥</title>
                 <meta name="description" content="Contact Eorum Website" />
