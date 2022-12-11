@@ -8,9 +8,15 @@ import avif from '../pintures/shopping.avif'
 import jpg from '../pintures/shopping.jpg'
 import webp from '../pintures/shopping.webp'
 
+import { Helmet } from 'react-helmet';
+
 export function Shipping() {
     return (
         <section className='container zIndex'>
+            <Helmet>
+                <title>Shipping 📃 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Shipping' />
                 <h2 className='title'>Shipping</h2>

@@ -2,11 +2,17 @@ import { Ruta } from "../components/Ruta";
 import styles from '../css/About.module.css'
 import img from '../pintures/products/laser-cheung.jpg'
 
+import { Helmet } from 'react-helmet';
+
 import Fade from 'react-reveal/Fade';
 
 export function About() {
     return (
         <section className='container zIndex'>
+            <Helmet>
+                <title>About 📃 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='About' />
                 <h2 className='title'>About</h2>

@@ -5,9 +5,16 @@ import styles from '../css/Login.module.css'
 
 import Fade from 'react-reveal/Fade';
 
+import { Helmet } from 'react-helmet';
+
+
 export function Login() {
     return (
         <section className={`container zIndex ${styles.login}`}>
+            <Helmet>
+                <title>Login 👤 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Login' />
                 <h2 className='title'>Login</h2>

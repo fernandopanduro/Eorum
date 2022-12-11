@@ -11,10 +11,17 @@ import visa from '../pintures/visa.png'
 import paypal from '../pintures/paypal.png'
 import americanExpress from '../pintures/american-express.png'
 
+import { Helmet } from 'react-helmet';
+
 
 export function Checkout() {
     return (
         <section className={`${styles.checkout} container`}>
+            <Helmet>
+                <title>Checkout || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
+
             <Fade top>
                 <Ruta ruta='Checkout' />
                 <h2 className='title'>Checkout</h2>

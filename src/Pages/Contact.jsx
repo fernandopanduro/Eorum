@@ -2,11 +2,17 @@ import styles from '../css/Contact.module.css';
 
 import Fade from 'react-reveal/Fade';
 
+import { Helmet } from 'react-helmet';
+
 import { Ruta } from '../components/Ruta'
 
 export function Contact() {
     return (
         <section className={`container zIndex`}>
+            <Helmet>
+                <title>Contact ✉️ || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Contact'/>
                 <h2 className='title'>Contact</h2>

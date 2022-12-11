@@ -13,7 +13,7 @@ import { Ruta } from '../components/Ruta'
 
 import Fade from 'react-reveal/Fade';
 
-
+import { Helmet } from 'react-helmet';
 
 
 export function ProductDetails() {
@@ -85,6 +85,10 @@ export function ProductDetails() {
 
     return (
         <section className='container'>
+            <Helmet>
+                <title> {title} 👔 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Link to='/'>
                 <div className={styles.return}>
                     <MdArrowForwardIos className={styles.arrowRuta} size={23} />

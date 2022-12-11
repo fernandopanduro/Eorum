@@ -4,9 +4,15 @@ import Fade from 'react-reveal/Fade';
 
 import styles from '../css/Terms.module.css';
 
+import { Helmet } from 'react-helmet';
+
 export function Terms() {
     return (
         <section className={`container zIndex`}>
+            <Helmet>
+                <title>Terms 📃 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>           
                 <Ruta ruta='Terms' />
                 <h2 className='title'>Terms</h2>

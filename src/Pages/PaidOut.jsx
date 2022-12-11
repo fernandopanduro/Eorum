@@ -5,9 +5,16 @@ import { Link } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade';
 
+import { Helmet } from 'react-helmet';
+
+
 export function PaidOut() {
     return (
         <section className={`${styles.paidOut} zIndex`}>
+            <Helmet>
+                <title>Paidout ⭐ || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <div className={styles.shoppingCartContainer}>
                 <GiShoppingCart className={styles.shoppingCart} size={23}/>
             </div>

@@ -11,6 +11,7 @@ import { CartItem } from '../components/CartItem';
 import { TYPES } from '../Actions/shoppingActions';
 import { Link } from 'react-router-dom';
 
+import { Helmet } from 'react-helmet';
 
 
 export function ShoppingCart() {
@@ -39,6 +40,10 @@ export function ShoppingCart() {
 
     return (
         <section className={`${styles.shoppingCart} container`}>
+            <Helmet>
+                <title>Shopping Cart 🛒 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Shopping Cart' />
                 <h2 className='title'>Shopping Cart</h2>

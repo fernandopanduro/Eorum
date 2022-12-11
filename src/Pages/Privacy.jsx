@@ -2,11 +2,17 @@ import styles from '../css/Privacy.module.css';
 
 import Fade from 'react-reveal/Fade';
 
-import { Ruta } from '../components/Ruta'
+import { Ruta } from '../components/Ruta';
+
+import { Helmet } from 'react-helmet';
 
 export function Privacy() {
     return (
         <section className={`container zIndex`}>
+            <Helmet>
+                <title>Privacy 📃 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Privacy' />
                 <h2 className='title'>Privacy</h2>

@@ -4,9 +4,15 @@ import Fade from 'react-reveal/Fade';
 
 import { Ruta } from '../components/Ruta'
 
+import { Helmet } from 'react-helmet';
+
 export function Refund() {
     return (
         <section className='container zIndex'>
+            <Helmet>
+                <title>Refund 📃 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Refund' />
                 <h2 className='title'>Refund</h2>

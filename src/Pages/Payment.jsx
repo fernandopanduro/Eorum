@@ -5,9 +5,15 @@ import styles from '../css/Payment.module.css'
 
 import Fade from 'react-reveal/Fade';
 
+import { Helmet } from 'react-helmet';
+
 export function Payment() {
     return (
         <section className='container zIndex'>
+            <Helmet>
+                <title>Payment ✅ || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Payment' />
                 <h2 className='title'>Payment</h2>

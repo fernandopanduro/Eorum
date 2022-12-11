@@ -5,9 +5,15 @@ import styles from '../css/CreateAcount.module.css'
 
 import Fade from 'react-reveal/Fade';
 
+import { Helmet } from 'react-helmet';
+
 export function CreateAcount() {
     return (
         <section className={`container zIndex ${styles.createAcount}`}>
+            <Helmet>
+                <title>Create Acount 👤 || Eorum 🔥</title>
+                <meta name="description" content="About Eorum Website" />
+            </Helmet>
             <Fade top>
                 <Ruta ruta='Create Acount' />
                 <h2 className='title'>Create Acount</h2>
