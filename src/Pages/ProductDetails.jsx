@@ -84,7 +84,7 @@ export function ProductDetails() {
     
 
     return (
-        <section className='container'>
+        <section className='container zIndex'>
             <Helmet>
                 <title> {title} 👔 || Eorum 🔥</title>
                 <meta name="description" content="About Eorum Website" />
